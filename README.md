@@ -257,97 +257,91 @@ function kdelf() { kubectl delete -f "$1"; } # delete + input modifier
 function kden() { kubectl debug --all-namespaces "$1"; } # debug + scope modifier
 function kdn() { kubectl describe --all-namespaces "$1"; } # describe + scope modifier
 function kevj() { kubectl events -o json "$1"; } # events + output modifier
-function kevl() { kubectl events -o wide "$1"; } # events + output modifier
-function kevn() { kubectl events --all-namespaces "$1"; } # events + scope modifier
+function kevw() { kubectl events -o wide "$1"; } # events + output modifier
 function kevy() { kubectl events -o yaml "$1"; } # events + output modifier
 function kgcjj() { kubectl get cj "$1" -o json; } # get cronjobs + output
-function kgcjl() { kubectl get cj "$1" -o wide; } # get cronjobs + output
+function kgcjw() { kubectl get cj "$1" -o wide; } # get cronjobs + output
 function kgcjy() { kubectl get cj "$1" -o yaml; } # get cronjobs + output
 function kgcmj() { kubectl get cm "$1" -o json; } # get configmaps + output
-function kgcml() { kubectl get cm "$1" -o wide; } # get configmaps + output
+function kgcmw() { kubectl get cm "$1" -o wide; } # get configmaps + output
 function kgcmy() { kubectl get cm "$1" -o yaml; } # get configmaps + output
 function kgcrdj() { kubectl get crd "$1" -o json; } # get customresourcedefinitions + output
-function kgcrdl() { kubectl get crd "$1" -o wide; } # get customresourcedefinitions + output
+function kgcrdw() { kubectl get crd "$1" -o wide; } # get customresourcedefinitions + output
 function kgcrdy() { kubectl get crd "$1" -o yaml; } # get customresourcedefinitions + output
 function kgcsj() { kubectl get cs "$1" -o json; } # get componentstatuses + output
-function kgcsl() { kubectl get cs "$1" -o wide; } # get componentstatuses + output
 function kgcsrj() { kubectl get csr "$1" -o json; } # get certificatesigningrequests + output
-function kgcsrl() { kubectl get csr "$1" -o wide; } # get certificatesigningrequests + output
+function kgcsrw() { kubectl get csr "$1" -o wide; } # get certificatesigningrequests + output
 function kgcsry() { kubectl get csr "$1" -o yaml; } # get certificatesigningrequests + output
+function kgcsw() { kubectl get cs "$1" -o wide; } # get componentstatuses + output
 function kgcsy() { kubectl get cs "$1" -o yaml; } # get componentstatuses + output
 function kgdeployj() { kubectl get deploy "$1" -o json; } # get deployments + output
-function kgdeployl() { kubectl get deploy "$1" -o wide; } # get deployments + output
+function kgdeployw() { kubectl get deploy "$1" -o wide; } # get deployments + output
 function kgdeployy() { kubectl get deploy "$1" -o yaml; } # get deployments + output
 function kgdsj() { kubectl get ds "$1" -o json; } # get daemonsets + output
-function kgdsl() { kubectl get ds "$1" -o wide; } # get daemonsets + output
+function kgdsw() { kubectl get ds "$1" -o wide; } # get daemonsets + output
 function kgdsy() { kubectl get ds "$1" -o yaml; } # get daemonsets + output
 function kgepj() { kubectl get ep "$1" -o json; } # get endpoints + output
-function kgepl() { kubectl get ep "$1" -o wide; } # get endpoints + output
+function kgepw() { kubectl get ep "$1" -o wide; } # get endpoints + output
 function kgepy() { kubectl get ep "$1" -o yaml; } # get endpoints + output
 function kgevj() { kubectl get ev "$1" -o json; } # get events + output
-function kgevl() { kubectl get ev "$1" -o wide; } # get events + output
+function kgevw() { kubectl get ev "$1" -o wide; } # get events + output
 function kgevy() { kubectl get ev "$1" -o yaml; } # get events + output
 function kghpaj() { kubectl get hpa "$1" -o json; } # get horizontalpodautoscalers + output
-function kghpal() { kubectl get hpa "$1" -o wide; } # get horizontalpodautoscalers + output
+function kghpaw() { kubectl get hpa "$1" -o wide; } # get horizontalpodautoscalers + output
 function kghpay() { kubectl get hpa "$1" -o yaml; } # get horizontalpodautoscalers + output
 function kgingj() { kubectl get ing "$1" -o json; } # get ingresses + output
-function kgingl() { kubectl get ing "$1" -o wide; } # get ingresses + output
+function kgingw() { kubectl get ing "$1" -o wide; } # get ingresses + output
 function kgingy() { kubectl get ing "$1" -o yaml; } # get ingresses + output
 function kgj() { kubectl get -o json "$1"; } # get + output modifier
-function kgl() { kubectl get -o wide "$1"; } # get + output modifier
 function kglimitsj() { kubectl get limits "$1" -o json; } # get limitranges + output
-function kglimitsl() { kubectl get limits "$1" -o wide; } # get limitranges + output
+function kglimitsw() { kubectl get limits "$1" -o wide; } # get limitranges + output
 function kglimitsy() { kubectl get limits "$1" -o yaml; } # get limitranges + output
 function kgn() { kubectl get --all-namespaces "$1"; } # get + scope modifier
 function kgnetpolj() { kubectl get netpol "$1" -o json; } # get networkpolicies + output
-function kgnetpoll() { kubectl get netpol "$1" -o wide; } # get networkpolicies + output
+function kgnetpolw() { kubectl get netpol "$1" -o wide; } # get networkpolicies + output
 function kgnetpoly() { kubectl get netpol "$1" -o yaml; } # get networkpolicies + output
 function kgnoj() { kubectl get no "$1" -o json; } # get nodes + output
-function kgnol() { kubectl get no "$1" -o wide; } # get nodes + output
+function kgnow() { kubectl get no "$1" -o wide; } # get nodes + output
 function kgnoy() { kubectl get no "$1" -o yaml; } # get nodes + output
 function kgnsj() { kubectl get ns "$1" -o json; } # get namespaces + output
-function kgnsl() { kubectl get ns "$1" -o wide; } # get namespaces + output
+function kgnsw() { kubectl get ns "$1" -o wide; } # get namespaces + output
 function kgnsy() { kubectl get ns "$1" -o yaml; } # get namespaces + output
 function kgpcj() { kubectl get pc "$1" -o json; } # get priorityclasses + output
-function kgpcl() { kubectl get pc "$1" -o wide; } # get priorityclasses + output
+function kgpcw() { kubectl get pc "$1" -o wide; } # get priorityclasses + output
 function kgpcy() { kubectl get pc "$1" -o yaml; } # get priorityclasses + output
 function kgpdbj() { kubectl get pdb "$1" -o json; } # get poddisruptionbudgets + output
-function kgpdbl() { kubectl get pdb "$1" -o wide; } # get poddisruptionbudgets + output
+function kgpdbw() { kubectl get pdb "$1" -o wide; } # get poddisruptionbudgets + output
 function kgpdby() { kubectl get pdb "$1" -o yaml; } # get poddisruptionbudgets + output
 function kgpoj() { kubectl get po "$1" -o json; } # get pods + output
-function kgpol() { kubectl get po "$1" -o wide; } # get pods + output
+function kgpow() { kubectl get po "$1" -o wide; } # get pods + output
 function kgpoy() { kubectl get po "$1" -o yaml; } # get pods + output
 function kgpvcj() { kubectl get pvc "$1" -o json; } # get persistentvolumeclaims + output
-function kgpvcl() { kubectl get pvc "$1" -o wide; } # get persistentvolumeclaims + output
+function kgpvcw() { kubectl get pvc "$1" -o wide; } # get persistentvolumeclaims + output
 function kgpvcy() { kubectl get pvc "$1" -o yaml; } # get persistentvolumeclaims + output
 function kgpvj() { kubectl get pv "$1" -o json; } # get persistentvolumes + output
-function kgpvl() { kubectl get pv "$1" -o wide; } # get persistentvolumes + output
+function kgpvw() { kubectl get pv "$1" -o wide; } # get persistentvolumes + output
 function kgpvy() { kubectl get pv "$1" -o yaml; } # get persistentvolumes + output
 function kgquotaj() { kubectl get quota "$1" -o json; } # get resourcequotas + output
-function kgquotal() { kubectl get quota "$1" -o wide; } # get resourcequotas + output
+function kgquotaw() { kubectl get quota "$1" -o wide; } # get resourcequotas + output
 function kgquotay() { kubectl get quota "$1" -o yaml; } # get resourcequotas + output
 function kgrcj() { kubectl get rc "$1" -o json; } # get replicationcontrollers + output
-function kgrcl() { kubectl get rc "$1" -o wide; } # get replicationcontrollers + output
+function kgrcw() { kubectl get rc "$1" -o wide; } # get replicationcontrollers + output
 function kgrcy() { kubectl get rc "$1" -o yaml; } # get replicationcontrollers + output
 function kgrsj() { kubectl get rs "$1" -o json; } # get replicasets + output
-function kgrsl() { kubectl get rs "$1" -o wide; } # get replicasets + output
+function kgrsw() { kubectl get rs "$1" -o wide; } # get replicasets + output
 function kgrsy() { kubectl get rs "$1" -o yaml; } # get replicasets + output
 function kgsaj() { kubectl get sa "$1" -o json; } # get serviceaccounts + output
-function kgsal() { kubectl get sa "$1" -o wide; } # get serviceaccounts + output
+function kgsaw() { kubectl get sa "$1" -o wide; } # get serviceaccounts + output
 function kgsay() { kubectl get sa "$1" -o yaml; } # get serviceaccounts + output
 function kgscj() { kubectl get sc "$1" -o json; } # get storageclasses + output
-function kgscl() { kubectl get sc "$1" -o wide; } # get storageclasses + output
+function kgscw() { kubectl get sc "$1" -o wide; } # get storageclasses + output
 function kgscy() { kubectl get sc "$1" -o yaml; } # get storageclasses + output
 function kgstsj() { kubectl get sts "$1" -o json; } # get statefulsets + output
-function kgstsl() { kubectl get sts "$1" -o wide; } # get statefulsets + output
+function kgstsw() { kubectl get sts "$1" -o wide; } # get statefulsets + output
 function kgstsy() { kubectl get sts "$1" -o yaml; } # get statefulsets + output
 function kgsvcj() { kubectl get svc "$1" -o json; } # get services + output
-function kgsvcl() { kubectl get svc "$1" -o wide; } # get services + output
+function kgsvcw() { kubectl get svc "$1" -o wide; } # get services + output
 function kgsvcy() { kubectl get svc "$1" -o yaml; } # get services + output
+function kgw() { kubectl get -o wide "$1"; } # get + output modifier
 function kgy() { kubectl get -o yaml "$1"; } # get + output modifier
-function klj() { kubectl logs -o json "$1"; } # logs + output modifier
-function kll() { kubectl logs -o wide "$1"; } # logs + output modifier
-function kln() { kubectl logs --all-namespaces "$1"; } # logs + scope modifier
-function kly() { kubectl logs -o yaml "$1"; } # logs + output modifier
-function ktn() { kubectl top --all-namespaces "$1"; } # top + scope modifier
 ```

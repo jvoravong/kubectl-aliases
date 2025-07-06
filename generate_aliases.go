@@ -16,7 +16,7 @@ import (
 var OutputModifiers = map[string]string{
 	"j": "-o json",
 	"y": "-o yaml",
-	"l": "-o wide",
+	"w": "-o wide",
 }
 
 var InputModifiers = map[string]string{
@@ -38,11 +38,11 @@ var CommandConfig = map[string]CommandSpec{
 	"describe": {Priority: true, Modifiers: map[string]map[string]string{"scope": ScopeModifiers}},
 	"edit":     {Priority: true},
 	"get":      {Priority: true, Modifiers: map[string]map[string]string{"output": OutputModifiers, "scope": ScopeModifiers}},
-	"logs":     {Priority: true, Modifiers: map[string]map[string]string{"output": OutputModifiers, "scope": ScopeModifiers}},
-	"top":      {Priority: true, Modifiers: map[string]map[string]string{"scope": ScopeModifiers}},
+	"logs":     {Priority: true},
+	"top":      {Priority: true},
 	"auth":     {Modifiers: map[string]map[string]string{"scope": ScopeModifiers}},
 	"debug":    {Modifiers: map[string]map[string]string{"scope": ScopeModifiers}},
-	"events":   {Modifiers: map[string]map[string]string{"output": OutputModifiers, "scope": ScopeModifiers}},
+	"events":   {Modifiers: map[string]map[string]string{"output": OutputModifiers}},
 	"delete":   {Modifiers: map[string]map[string]string{"input": InputModifiers}},
 }
 
