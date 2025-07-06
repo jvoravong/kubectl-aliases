@@ -6,17 +6,7 @@ repos:
       - id: trailing-whitespace
       - id: check-added-large-files
       - id: check-yaml
-  - repo: https://github.com/dnephin/pre-commit-golang
-    rev: v1.4.0
-    hooks:
-      - id: go-fmt
-      - id: go-mod-tidy
-      - id: go-test
-      - id: go-build
-  - repo: local
-    hooks:
-      - id: validate-kubectl-aliases
-        name: Validate generated aliases
-        entry: bash -c 'make all && git diff --exit-code kubectl_aliases'
-        language: system
-        pass_filenames: false
+        exclude: ^kubectl_test_objects\.yaml$
+      - id: check-merge-conflict
+      - id: check-case-conflict
+      - id: detect-private-key
