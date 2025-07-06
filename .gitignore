@@ -1,0 +1,35 @@
+# Binaries
+kubectl-aliases
+
+# Build outputs
+*.exe
+*.out
+*.o
+*.a
+
+# Dependency directories
+vendor/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Go tools
+coverage.out
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Testing cache
+*.test
+
+# Misc
+*.bak
+*~

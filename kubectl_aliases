@@ -1,0 +1,248 @@
+# Auto-generated kubectl function alias file
+alias ka='kubectl apply' # apply
+function kaf() { kubectl apply -f "$1"; } # apply + input modifier
+function ka() { kubectl apply  "$1"; } # apply + input modifier
+alias kau='kubectl auth' # auth
+function kaun() { kubectl auth --all-namespaces "$1"; } # auth + scope modifier
+alias kc='kubectl create' # create
+alias kccm='kubectl create cm' # create configmaps
+alias kclimits='kubectl create limits' # create limitranges
+alias kccs='kubectl create cs' # create componentstatuses
+alias kcsa='kubectl create sa' # create serviceaccounts
+alias kcrs='kubectl create rs' # create replicasets
+alias kcdeploy='kubectl create deploy' # create deployments
+alias kchpa='kubectl create hpa' # create horizontalpodautoscalers
+alias kcnetpol='kubectl create netpol' # create networkpolicies
+alias kcpv='kubectl create pv' # create persistentvolumes
+alias kcpvc='kubectl create pvc' # create persistentvolumeclaims
+alias kcrc='kubectl create rc' # create replicationcontrollers
+alias kcing='kubectl create ing' # create ingresses
+alias kccrd='kubectl create crd' # create customresourcedefinitions
+alias kcquota='kubectl create quota' # create resourcequotas
+alias kcno='kubectl create no' # create nodes
+alias kcep='kubectl create ep' # create endpoints
+alias kccj='kubectl create cj' # create cronjobs
+alias kccsr='kubectl create csr' # create certificatesigningrequests
+alias kcpdb='kubectl create pdb' # create poddisruptionbudgets
+alias kcsc='kubectl create sc' # create storageclasses
+alias kcpc='kubectl create pc' # create priorityclasses
+alias kcsvc='kubectl create svc' # create services
+alias kcev='kubectl create ev' # create events
+alias kcpo='kubectl create po' # create pods
+alias kcns='kubectl create ns' # create namespaces
+alias kcds='kubectl create ds' # create daemonsets
+alias kcsts='kubectl create sts' # create statefulsets
+alias kde='kubectl debug' # debug
+function kden() { kubectl debug --all-namespaces "$1"; } # debug + scope modifier
+alias kdel='kubectl delete' # delete
+alias kdelns='kubectl delete ns' # delete namespaces
+alias kdelds='kubectl delete ds' # delete daemonsets
+alias kdelsts='kubectl delete sts' # delete statefulsets
+alias kdelcm='kubectl delete cm' # delete configmaps
+alias kdellimits='kubectl delete limits' # delete limitranges
+alias kdelcs='kubectl delete cs' # delete componentstatuses
+alias kdelsa='kubectl delete sa' # delete serviceaccounts
+alias kdelrs='kubectl delete rs' # delete replicasets
+alias kdeldeploy='kubectl delete deploy' # delete deployments
+alias kdelhpa='kubectl delete hpa' # delete horizontalpodautoscalers
+alias kdelnetpol='kubectl delete netpol' # delete networkpolicies
+alias kdelpv='kubectl delete pv' # delete persistentvolumes
+alias kdelpvc='kubectl delete pvc' # delete persistentvolumeclaims
+alias kdelrc='kubectl delete rc' # delete replicationcontrollers
+alias kdeling='kubectl delete ing' # delete ingresses
+alias kdelcrd='kubectl delete crd' # delete customresourcedefinitions
+alias kdelquota='kubectl delete quota' # delete resourcequotas
+alias kdelno='kubectl delete no' # delete nodes
+alias kdelep='kubectl delete ep' # delete endpoints
+alias kdelcj='kubectl delete cj' # delete cronjobs
+alias kdelcsr='kubectl delete csr' # delete certificatesigningrequests
+alias kdelpdb='kubectl delete pdb' # delete poddisruptionbudgets
+alias kdelsc='kubectl delete sc' # delete storageclasses
+alias kdelpc='kubectl delete pc' # delete priorityclasses
+alias kdelsvc='kubectl delete svc' # delete services
+alias kdelev='kubectl delete ev' # delete events
+alias kdelpo='kubectl delete po' # delete pods
+function kdelf() { kubectl delete -f "$1"; } # delete + input modifier
+function kdel() { kubectl delete  "$1"; } # delete + input modifier
+alias kd='kubectl describe' # describe
+alias kdcm='kubectl describe cm' # describe configmaps
+alias kdlimits='kubectl describe limits' # describe limitranges
+alias kdcs='kubectl describe cs' # describe componentstatuses
+alias kdsa='kubectl describe sa' # describe serviceaccounts
+alias kdrs='kubectl describe rs' # describe replicasets
+alias kddeploy='kubectl describe deploy' # describe deployments
+alias kdhpa='kubectl describe hpa' # describe horizontalpodautoscalers
+alias kdnetpol='kubectl describe netpol' # describe networkpolicies
+alias kdpv='kubectl describe pv' # describe persistentvolumes
+alias kdpvc='kubectl describe pvc' # describe persistentvolumeclaims
+alias kdrc='kubectl describe rc' # describe replicationcontrollers
+alias kding='kubectl describe ing' # describe ingresses
+alias kdcrd='kubectl describe crd' # describe customresourcedefinitions
+alias kdquota='kubectl describe quota' # describe resourcequotas
+alias kdno='kubectl describe no' # describe nodes
+alias kdep='kubectl describe ep' # describe endpoints
+alias kdcj='kubectl describe cj' # describe cronjobs
+alias kdcsr='kubectl describe csr' # describe certificatesigningrequests
+alias kdpdb='kubectl describe pdb' # describe poddisruptionbudgets
+alias kdsc='kubectl describe sc' # describe storageclasses
+alias kdpc='kubectl describe pc' # describe priorityclasses
+alias kdsvc='kubectl describe svc' # describe services
+alias kdev='kubectl describe ev' # describe events
+alias kdpo='kubectl describe po' # describe pods
+alias kdns='kubectl describe ns' # describe namespaces
+alias kdds='kubectl describe ds' # describe daemonsets
+alias kdsts='kubectl describe sts' # describe statefulsets
+function kdn() { kubectl describe --all-namespaces "$1"; } # describe + scope modifier
+alias ke='kubectl edit' # edit
+alias kecm='kubectl edit cm' # edit configmaps
+alias kelimits='kubectl edit limits' # edit limitranges
+alias kecs='kubectl edit cs' # edit componentstatuses
+alias kesa='kubectl edit sa' # edit serviceaccounts
+alias kers='kubectl edit rs' # edit replicasets
+alias kedeploy='kubectl edit deploy' # edit deployments
+alias kehpa='kubectl edit hpa' # edit horizontalpodautoscalers
+alias kenetpol='kubectl edit netpol' # edit networkpolicies
+alias kepv='kubectl edit pv' # edit persistentvolumes
+alias kepvc='kubectl edit pvc' # edit persistentvolumeclaims
+alias kerc='kubectl edit rc' # edit replicationcontrollers
+alias keing='kubectl edit ing' # edit ingresses
+alias kecrd='kubectl edit crd' # edit customresourcedefinitions
+alias kequota='kubectl edit quota' # edit resourcequotas
+alias keno='kubectl edit no' # edit nodes
+alias keep='kubectl edit ep' # edit endpoints
+alias kecj='kubectl edit cj' # edit cronjobs
+alias kecsr='kubectl edit csr' # edit certificatesigningrequests
+alias kepdb='kubectl edit pdb' # edit poddisruptionbudgets
+alias kesc='kubectl edit sc' # edit storageclasses
+alias kepc='kubectl edit pc' # edit priorityclasses
+alias kesvc='kubectl edit svc' # edit services
+alias keev='kubectl edit ev' # edit events
+alias kepo='kubectl edit po' # edit pods
+alias kens='kubectl edit ns' # edit namespaces
+alias keds='kubectl edit ds' # edit daemonsets
+alias kests='kubectl edit sts' # edit statefulsets
+alias kev='kubectl events' # events
+function kevj() { kubectl events -o json "$1"; } # events + output modifier
+function kevy() { kubectl events -o yaml "$1"; } # events + output modifier
+function kevl() { kubectl events -o wide "$1"; } # events + output modifier
+function kevn() { kubectl events --all-namespaces "$1"; } # events + scope modifier
+alias kg='kubectl get' # get
+alias kgrs='kubectl get rs' # get replicasets
+function kgrsj() { kubectl get rs "$1" -o json; } # get replicasets + output
+function kgrsy() { kubectl get rs "$1" -o yaml; } # get replicasets + output
+function kgrsl() { kubectl get rs "$1" -o wide; } # get replicasets + output
+alias kgdeploy='kubectl get deploy' # get deployments
+function kgdeployl() { kubectl get deploy "$1" -o wide; } # get deployments + output
+function kgdeployj() { kubectl get deploy "$1" -o json; } # get deployments + output
+function kgdeployy() { kubectl get deploy "$1" -o yaml; } # get deployments + output
+alias kghpa='kubectl get hpa' # get horizontalpodautoscalers
+function kghpaj() { kubectl get hpa "$1" -o json; } # get horizontalpodautoscalers + output
+function kghpay() { kubectl get hpa "$1" -o yaml; } # get horizontalpodautoscalers + output
+function kghpal() { kubectl get hpa "$1" -o wide; } # get horizontalpodautoscalers + output
+alias kgnetpol='kubectl get netpol' # get networkpolicies
+function kgnetpolj() { kubectl get netpol "$1" -o json; } # get networkpolicies + output
+function kgnetpoly() { kubectl get netpol "$1" -o yaml; } # get networkpolicies + output
+function kgnetpoll() { kubectl get netpol "$1" -o wide; } # get networkpolicies + output
+alias kgpv='kubectl get pv' # get persistentvolumes
+function kgpvj() { kubectl get pv "$1" -o json; } # get persistentvolumes + output
+function kgpvy() { kubectl get pv "$1" -o yaml; } # get persistentvolumes + output
+function kgpvl() { kubectl get pv "$1" -o wide; } # get persistentvolumes + output
+alias kgpvc='kubectl get pvc' # get persistentvolumeclaims
+function kgpvcj() { kubectl get pvc "$1" -o json; } # get persistentvolumeclaims + output
+function kgpvcy() { kubectl get pvc "$1" -o yaml; } # get persistentvolumeclaims + output
+function kgpvcl() { kubectl get pvc "$1" -o wide; } # get persistentvolumeclaims + output
+alias kgrc='kubectl get rc' # get replicationcontrollers
+function kgrcj() { kubectl get rc "$1" -o json; } # get replicationcontrollers + output
+function kgrcy() { kubectl get rc "$1" -o yaml; } # get replicationcontrollers + output
+function kgrcl() { kubectl get rc "$1" -o wide; } # get replicationcontrollers + output
+alias kging='kubectl get ing' # get ingresses
+function kgingj() { kubectl get ing "$1" -o json; } # get ingresses + output
+function kgingy() { kubectl get ing "$1" -o yaml; } # get ingresses + output
+function kgingl() { kubectl get ing "$1" -o wide; } # get ingresses + output
+alias kgcrd='kubectl get crd' # get customresourcedefinitions
+function kgcrdj() { kubectl get crd "$1" -o json; } # get customresourcedefinitions + output
+function kgcrdy() { kubectl get crd "$1" -o yaml; } # get customresourcedefinitions + output
+function kgcrdl() { kubectl get crd "$1" -o wide; } # get customresourcedefinitions + output
+alias kgquota='kubectl get quota' # get resourcequotas
+function kgquotaj() { kubectl get quota "$1" -o json; } # get resourcequotas + output
+function kgquotay() { kubectl get quota "$1" -o yaml; } # get resourcequotas + output
+function kgquotal() { kubectl get quota "$1" -o wide; } # get resourcequotas + output
+alias kgno='kubectl get no' # get nodes
+function kgnoy() { kubectl get no "$1" -o yaml; } # get nodes + output
+function kgnol() { kubectl get no "$1" -o wide; } # get nodes + output
+function kgnoj() { kubectl get no "$1" -o json; } # get nodes + output
+alias kgep='kubectl get ep' # get endpoints
+function kgepl() { kubectl get ep "$1" -o wide; } # get endpoints + output
+function kgepj() { kubectl get ep "$1" -o json; } # get endpoints + output
+function kgepy() { kubectl get ep "$1" -o yaml; } # get endpoints + output
+alias kgcj='kubectl get cj' # get cronjobs
+function kgcjj() { kubectl get cj "$1" -o json; } # get cronjobs + output
+function kgcjy() { kubectl get cj "$1" -o yaml; } # get cronjobs + output
+function kgcjl() { kubectl get cj "$1" -o wide; } # get cronjobs + output
+alias kgcsr='kubectl get csr' # get certificatesigningrequests
+function kgcsrj() { kubectl get csr "$1" -o json; } # get certificatesigningrequests + output
+function kgcsry() { kubectl get csr "$1" -o yaml; } # get certificatesigningrequests + output
+function kgcsrl() { kubectl get csr "$1" -o wide; } # get certificatesigningrequests + output
+alias kgpdb='kubectl get pdb' # get poddisruptionbudgets
+function kgpdbl() { kubectl get pdb "$1" -o wide; } # get poddisruptionbudgets + output
+function kgpdbj() { kubectl get pdb "$1" -o json; } # get poddisruptionbudgets + output
+function kgpdby() { kubectl get pdb "$1" -o yaml; } # get poddisruptionbudgets + output
+alias kgsc='kubectl get sc' # get storageclasses
+function kgscj() { kubectl get sc "$1" -o json; } # get storageclasses + output
+function kgscy() { kubectl get sc "$1" -o yaml; } # get storageclasses + output
+function kgscl() { kubectl get sc "$1" -o wide; } # get storageclasses + output
+alias kgpc='kubectl get pc' # get priorityclasses
+function kgpcj() { kubectl get pc "$1" -o json; } # get priorityclasses + output
+function kgpcy() { kubectl get pc "$1" -o yaml; } # get priorityclasses + output
+function kgpcl() { kubectl get pc "$1" -o wide; } # get priorityclasses + output
+alias kgsvc='kubectl get svc' # get services
+function kgsvcj() { kubectl get svc "$1" -o json; } # get services + output
+function kgsvcy() { kubectl get svc "$1" -o yaml; } # get services + output
+function kgsvcl() { kubectl get svc "$1" -o wide; } # get services + output
+alias kgev='kubectl get ev' # get events
+function kgevj() { kubectl get ev "$1" -o json; } # get events + output
+function kgevy() { kubectl get ev "$1" -o yaml; } # get events + output
+function kgevl() { kubectl get ev "$1" -o wide; } # get events + output
+alias kgpo='kubectl get po' # get pods
+function kgpoy() { kubectl get po "$1" -o yaml; } # get pods + output
+function kgpol() { kubectl get po "$1" -o wide; } # get pods + output
+function kgpoj() { kubectl get po "$1" -o json; } # get pods + output
+alias kgns='kubectl get ns' # get namespaces
+function kgnsj() { kubectl get ns "$1" -o json; } # get namespaces + output
+function kgnsy() { kubectl get ns "$1" -o yaml; } # get namespaces + output
+function kgnsl() { kubectl get ns "$1" -o wide; } # get namespaces + output
+alias kgds='kubectl get ds' # get daemonsets
+function kgdsy() { kubectl get ds "$1" -o yaml; } # get daemonsets + output
+function kgdsl() { kubectl get ds "$1" -o wide; } # get daemonsets + output
+function kgdsj() { kubectl get ds "$1" -o json; } # get daemonsets + output
+alias kgsts='kubectl get sts' # get statefulsets
+function kgstsy() { kubectl get sts "$1" -o yaml; } # get statefulsets + output
+function kgstsl() { kubectl get sts "$1" -o wide; } # get statefulsets + output
+function kgstsj() { kubectl get sts "$1" -o json; } # get statefulsets + output
+alias kgcm='kubectl get cm' # get configmaps
+function kgcmy() { kubectl get cm "$1" -o yaml; } # get configmaps + output
+function kgcml() { kubectl get cm "$1" -o wide; } # get configmaps + output
+function kgcmj() { kubectl get cm "$1" -o json; } # get configmaps + output
+alias kglimits='kubectl get limits' # get limitranges
+function kglimitsj() { kubectl get limits "$1" -o json; } # get limitranges + output
+function kglimitsy() { kubectl get limits "$1" -o yaml; } # get limitranges + output
+function kglimitsl() { kubectl get limits "$1" -o wide; } # get limitranges + output
+alias kgcs='kubectl get cs' # get componentstatuses
+function kgcsl() { kubectl get cs "$1" -o wide; } # get componentstatuses + output
+function kgcsj() { kubectl get cs "$1" -o json; } # get componentstatuses + output
+function kgcsy() { kubectl get cs "$1" -o yaml; } # get componentstatuses + output
+alias kgsa='kubectl get sa' # get serviceaccounts
+function kgsay() { kubectl get sa "$1" -o yaml; } # get serviceaccounts + output
+function kgsal() { kubectl get sa "$1" -o wide; } # get serviceaccounts + output
+function kgsaj() { kubectl get sa "$1" -o json; } # get serviceaccounts + output
+function kgj() { kubectl get -o json "$1"; } # get + output modifier
+function kgy() { kubectl get -o yaml "$1"; } # get + output modifier
+function kgl() { kubectl get -o wide "$1"; } # get + output modifier
+function kgn() { kubectl get --all-namespaces "$1"; } # get + scope modifier
+alias kl='kubectl logs' # logs
+function kll() { kubectl logs -o wide "$1"; } # logs + output modifier
+function klj() { kubectl logs -o json "$1"; } # logs + output modifier
+function kly() { kubectl logs -o yaml "$1"; } # logs + output modifier
+function kln() { kubectl logs --all-namespaces "$1"; } # logs + scope modifier
+alias kt='kubectl top' # top
+function ktn() { kubectl top --all-namespaces "$1"; } # top + scope modifier
