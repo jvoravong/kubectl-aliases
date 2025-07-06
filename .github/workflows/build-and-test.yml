@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  validate:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,7 +19,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
-          go-version: '1.22'
+          go-version: '1.24'
 
       - name: Set up kubectl
         uses: azure/setup-kubectl@v3
@@ -37,7 +37,7 @@ jobs:
         run: pre-commit run --all-files
 
       - name: Run build/test pipeline
-        run: make all && make test
+        run: make all
 
       - name: Verify kubectl_aliases is up-to-date
         run: |
